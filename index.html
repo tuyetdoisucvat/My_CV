@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<!-- lang="vi" khai báo ngôn ngữ trang → hỗ trợ screen reader & SEO -->
+<html lang="vi">
+
+<head>
+  <!-- ========== METADATA BẮT BUỘC ========== -->
+  <meta charset="UTF-8" />
+  <!-- viewport: nền tảng của responsive mobile-first, khóa tỉ lệ 1:1 với thiết bị -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio CV của Vũ Minh Hiếu – Game Designer. Dự án, kỹ năng và thông tin liên hệ." />
+  <meta name="author" content="Vũ Minh Hiếu" />
+  <title>Vũ Minh Hiếu · Frontend Developer</title>
+
+  <!-- Liên kết tới file CSS tách rời (yêu cầu của bài) -->
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+
+<body>
+  <!-- BACKGROUND CÔNG NGHỆ -->
+<div class="tech-background" aria-hidden="true">
+  <div class="tech-grid"></div>
+  <div class="tech-glow tech-glow-1"></div>
+  <div class="tech-glow tech-glow-2"></div>
+</div>
+  <!-- ========================================================== -->
+  <!-- HEADER: nhận diện + điều hướng chính                        -->
+  <!-- ========================================================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <!-- Thương hiệu cá nhân -->
+      <a class="brand" href="#top" aria-label="Về đầu trang">
+        <span class="brand-mark" aria-hidden="true">A</span>
+        <span class="brand-name">Vũ Minh Hiếu 123</span>
+      </a>
+
+      <!-- NAV dùng Flexbox (xem styles.css) -->
+      <nav class="main-nav" aria-label="Điều hướng chính">
+        <ul class="nav-list">
+          <li><a href="#about">Giới thiệu</a></li>
+          <li><a href="#skills">Kỹ năng</a></li>
+          <li><a href="#projects">Dự án</a></li>
+          <li><a href="#contact">Liên hệ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========================================================== -->
+  <!-- MAIN: toàn bộ nội dung chính của trang                      -->
+  <!-- ========================================================== -->
+  <main id="top">
+    <!-- ----- SECTION: Giới thiệu / Hero ----- -->
+    <section id="about" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow">Xin chào, tôi là</p>
+          <h1 class="hero-title">Vũ Minh Hiếu</h1>
+          <p class="hero-role">Game Developer &amp; Game Designer</p>
+          <p class="hero-desc">
+            Tôi xây dựng game indie với trải nhiệm pixel siêu đơn giản nhưng cuốn hút.
+            Tốt nghiệp ngành Công nghệ thông tin, yêu thích C#, Python, giúp người dùng có trải nhiệm siêu thực
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">Xem dự án</a>
+            <a class="btn btn-outline" href="#contact">Liên hệ tôi</a>
+          </div>
+        </div>
+
+        <!-- Ảnh đại diện: dùng placeholder, thay bằng ảnh thật của bạn -->
+        <figure class="hero-avatar">
+          <img
+            src="assets/img/quby.jpg"
+            alt="Ảnh đại diện của Vũ Minh Hiếu"
+            width="1540px" height="1540px" />
+        </figure>
+      </div>
+    </section>
+
+    <!-- ----- SECTION: Kỹ năng ----- -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title">Kỹ năng</h2>
+        <p class="section-sub">Những công nghệ và kỹ năng tôi sử dụng thường xuyên.</p>
+
+        <ul class="skill-grid">
+          <li class="skill-chip">HTML5</li>
+          <li class="skill-chip">CSS3 / Flexbox / Grid</li>
+          <li class="skill-chip">JavaScript (ES6+)</li>
+          <li class="skill-chip">Responsive Design</li>
+          <li class="skill-chip">Git &amp; GitHub</li>
+          <li class="skill-chip">Python</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ----- SECTION: Dự án (danh sách thẻ dùng CSS Grid) ----- -->
+    <section id="projects" class="section section-muted">
+      <div class="container">
+        <h2 class="section-title">Dự án tiêu biểu</h2>
+        <p class="section-sub">Một vài sản phẩm tôi đã thực hiện.</p>
+
+        <!-- .project-grid dùng CSS Grid (xem styles.css) -->
+        <div class="project-grid">
+
+          <!-- Mỗi thẻ là một <article> độc lập, có thể đứng riêng -->
+          <article class="card">
+            <img class="card-media"
+              src="assets/img/rsm.jpg"
+              alt="Ảnh minh họa dự án Landing Page" width="600" height="360" />
+            <div class="card-body">
+              <h3 class="card-title">Snake Champion</h3>
+              <p class="card-desc">
+                Tựa game offline cho phép bạn điều khiển 1 con rắn, bằng việc ăn các vật phẩm có thể tích điểm, có chế độ chơi mạng, solo và chiến dịch 
+              <ul class="tag-list">
+                <li>C++</li>
+                <li>Davinci resolve</li>
+                <li>Godot</li>
+              </ul>
+              <a class="card-link" href="#">Xem chi tiết →</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img class="card-media"
+              src="assets/img/pxk.jpg"
+              alt="Ảnh minh họa dự án Todo App" width="600" height="360" />
+            <div class="card-body">
+              <h3 class="card-title">The Knight</h3>
+              <p class="card-desc">
+                Game giả lập cuộc sống của 1 kị sĩ thời trung cổ, với hệ thống vũ khí, tài nguyên và kẻ địch đa dạng.
+              </p>
+              <ul class="tag-list">
+                <li>JavaScript</li>
+                <li>Flexbox</li>
+              </ul>
+              <a class="card-link" href="#">Xem chi tiết →</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img class="card-media"
+              src="assets/img/golf.jpg"
+              alt="Ảnh minh họa dự án Weather Dashboard" width="600" height="360" />
+            <div class="card-body">
+              <h3 class="card-title">The Golf Master</h3>
+              <p class="card-desc">
+                Tựa game thể thao golf online với địa hình đa dạng và đòi hỏi người chơi cần có kỹ năng.
+              </p>
+              <ul class="tag-list">
+                <li>Godot</li>
+                <li>Python</li>
+              </ul>
+              <a class="card-link" href="#">Xem chi tiết →</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img class="card-media"
+              src="assets/img/chat.jpg"
+              alt="Ảnh minh họa dự án Blog cá nhân" width="600" height="360" />
+            <div class="card-body">
+              <h3 class="card-title">ChatBoom</h3>
+              <p class="card-desc">
+                Ứng dụng liên lạc với bạn bè trong game, mang lại trải nhiệm kết nối đa dạng.
+              </p>
+              <ul class="tag-list">
+                <li>HTML</li>
+                <li>CSS</li>
+              </ul>
+              <a class="card-link" href="#">Xem chi tiết →</a>
+            </div>
+          </article>
+
+        </div><!-- /.project-grid -->
+      </div>
+    </section>
+
+    
+<!-- SECTION: Liên hệ -->
+<section id="contact" class="section">
+  <div class="container">
+
+    <h2 class="section-title">Liên hệ</h2>
+    <p class="section-sub">
+      Mở cho các cơ hội thực tập &amp; việc làm về Game.
+    </p>
+
+    <div class="contact-layout">
+
+      <!-- CỘT TRÁI: THÔNG TIN LIÊN HỆ -->
+      <div class="contact-info">
+        <h3>Thông tin liên hệ</h3>
+        <p>
+          Bạn có thể liên hệ với tôi qua các nền tảng sau.
+        </p>
+
+        <ul class="contact-list">
+          <li>
+            <span class="contact-label">Email</span>
+            <a href="mailto:hvuminh967@gmail.com">
+              hvuminh967@gmail.com
+            </a>
+          </li>
+
+          <li>
+            <span class="contact-label">GitHub</span>
+            <a href="https://github.com/tuyetdoisucvat"
+               target="_blank"
+               rel="noopener noreferrer">
+              github.com/tuyetdoisucvat
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- CỘT PHẢI: FORM LIÊN HỆ -->
+      <div class="contact-form-wrapper">
+        <h3 class="form-title">Gửi thông tin</h3>
+
+        <form class="contact-form" action="#" method="post">
+
+          <div class="form-group">
+            <label for="fullname">Họ và tên</label>
+            <input
+              type="text"
+              id="fullname"
+              name="fullname"
+              placeholder="Nhập họ và tên"
+              autocomplete="name"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Địa chỉ email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="example@gmail.com"
+              autocomplete="email"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Số điện thoại</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Nhập số điện thoại"
+              autocomplete="tel"
+              pattern="[0-9+\s().-]{9,15}"
+              required
+            />
+          </div>
+
+          <button type="submit" class="form-submit">
+            Gửi thông tin
+          </button>
+
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  </main>
+
+  <!-- ========================================================== -->
+  <!-- FOOTER                                                      -->
+  <!-- ========================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Vũ Minh Hiếu. Thiết kế &amp; xây dựng bằng HTML5 + CSS3.</p>
+      <a href="#top" class="to-top">↑ Lên đầu trang</a>
+    </div>
+  </footer>
+
+</body>
+
+</html>
